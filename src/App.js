@@ -7,6 +7,7 @@ import BookList from './components/BookList'
 import fantasyBooks from './fantasyBooks.json'
 import MyNav from './components/MyNav'
 import MyJumbotron from './components/MyJumbotron'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <BookList books={fantasyBooks} />
       </header>
     </div>
+    <Footer/>
     </>
   )
 }
