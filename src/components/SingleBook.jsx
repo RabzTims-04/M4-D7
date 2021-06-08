@@ -1,24 +1,24 @@
-import React from 'react'
 import { Card } from 'react-bootstrap'
 // import CommentArea from './CommentArea'
 
-class SingleBook extends React.Component {
+const SingleBook =(props)=> {
 
     // state = {
     //     selected: false
     // }
 
-    render() {
+
         return (
             <>
                 <Card
                     // onClick={() => this.setState({ selected: !this.state.selected })}
-                    onClick={() => this.props.changeSelectedBook(this.props.book.asin)}
-                    style={{ border: this.props.selectedBook === this.props.book.asin ? '3px solid red' : 'none' }}
+                    onClick={() => props.changeSelectedBook(props.book.asin)}
+                    style={{ border: props.selectedBook === props.book.asin ? '3px solid red' : 'none' }}
+                    className='mt-5'
                 >
-                    <Card.Img variant="top" src={this.props.book.img} />
+                    <Card.Img variant="top" src={props.book.img} />
                     <Card.Body>
-                        <Card.Title style={{ color: 'black' }}>{this.props.book.title}</Card.Title>
+                        <Card.Title style={{ color: 'black', fontSize:'small' }}>{props.book.title}</Card.Title>
                     </Card.Body>
                 </Card>
                 {/* {
@@ -27,7 +27,5 @@ class SingleBook extends React.Component {
             </>
         )
     }
-
-}
 
 export default SingleBook

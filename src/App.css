@@ -13,8 +13,12 @@
   }
 }
 
+.navbar{
+  background-color: black;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +39,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card{
+  height: 300px;
+}
+
+.card-img-top{
+  height: 200px;
+  object-fit: cover;
+}
+
+.list-group-item{
+  background-color: transparent!important;
+  color: white;
+  font-size: small;
+  text-align: left;
+}
+
+.btn-danger{
+  padding: 1px 5px!important;
+}
+
+.delete-btn{
+  position: absolute;
+  right: 0;
+}
+
+.rate{
+  position: absolute;
+  right: 20%;
 }
